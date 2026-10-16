@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GymMember Frontend
 
-## Getting Started
+Frontend aplikasi manajemen keanggotaan gym yang dibangun menggunakan Next.js dan TypeScript, serta terhubung dengan backend Laravel API.
 
-First, run the development server:
+## Teknologi
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Laravel REST API
+- Sanctum Authentication
+
+## Fitur
+
+- Login dan autentikasi API
+- Menampilkan dan mengelola data member
+- Menampilkan dan mengelola paket membership
+- Pendaftaran membership
+- Pencatatan pembayaran
+- Melihat status membership
+
+## Persyaratan
+
+Pastikan perangkat sudah memiliki:
+
+- Node.js dan npm
+- Git
+- Backend GymMember yang sudah berjalan
+
+## Instalasi
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/mutiarahanum/GymMember-Frontend.git
+cd gymmember-nextjs
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Konfigurasi environment
+
+Buat file `.env.local` di folder utama project, lalu isi:
+
+```env
+API_BASE_URL=http://127.0.0.1:8000/api
+API_TOKEN=isi_token_sanctum_anda
+```
+
+Ganti `API_TOKEN` dengan token Sanctum yang valid dari backend GymMember.
+
+Jangan unggah `.env.local` atau token asli ke GitHub.
+
+### 4. Jalankan backend
+
+Pastikan backend Laravel sudah berjalan dan database sudah dikonfigurasi dengan benar.
+
+### 5. Jalankan frontend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka aplikasi melalui:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Repository
 
-## Learn More
+- Backend: https://github.com/mutiarahanum/GymMember-Backend
+- Frontend: https://github.com/mutiarahanum/GymMember-Frontend
 
-To learn more about Next.js, take a look at the following resources:
+## Catatan
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Backend menggunakan Laravel API.
+- Frontend menggunakan token Sanctum untuk mengakses endpoint API.
+- Jika konfigurasi environment diubah, restart server development Next.js.
