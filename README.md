@@ -49,7 +49,7 @@ Buat file `.env.local` di folder utama project, lalu isi:
 
 ```env
 API_BASE_URL=http://127.0.0.1:8000/api
-API_TOKEN=isi_token_sanctum_anda
+API_TOKEN=isi_token_sanctum
 ```
 
 Ganti `API_TOKEN` dengan token Sanctum yang valid dari backend GymMember.
